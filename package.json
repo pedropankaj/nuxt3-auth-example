@@ -2,8 +2,8 @@
   "name": "nuxt3-auth-example",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "node init && nuxt build",
+    "dev": "node init && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -14,17 +14,19 @@
     "*.{json,css,scss,md}": "prettier --write"
   },
   "dependencies": {
-    "oslo": "^1.1.3"
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
+    "oslo": "^1.2.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.2.0",
-    "@unocss/nuxt": "^0.58.5",
-    "eslint": "^8.57.0",
+    "@nuxt/eslint-config": "^0.3.1",
+    "@unocss/nuxt": "^0.59.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.11.2",
     "prettier": "^3.2.5"
   }
 }
